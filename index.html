@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./Assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./Assets/CSS/all.css">
+  <link rel="stylesheet" href="./Assets/CSS/Styles.css">
+  <script defer async src="./Assets/JS Vallidation/validation.js"></script>
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  
+</head>
+<body>
+<div class="container">
+  <section class="sections">
+    <div class="left-section">
+      <h1>Learn to code by watching others</h1>
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable.</p>
+    </div>
+    <div class="right-section">
+      <div class="title"><p>Try it free 7 days then $20/mo. thereafter</p></div>
+      <form action="#">
+        <label for="First name">
+          <input type="text" name="First-name" id="first-nameErr"/ placeholder="First Name" onkeyup="validateFirst()">
+          <span class="error-icon"></span>
+          <span class="error" id="firstErr"></span>
+        </label>
+        <label for="Last name">
+          <span class="error" id="lastErr"></span>
+          <span class="errlast error-icon"></span>
+          <input type="text" name="Last-name" id="last-nameErr"/ placeholder="Last Name" onkeyup="validateLastName()">
+        </label>
+        <label for="email">
+          <span class="error" id="emailName"></span>
+          <span class="emailErr error-icon"></span>
+          <input type="email" name="email-name" id="email-name"/ placeholder="Email Address" onkeyup="validateEmail()">
+        </label>
+        <label for="Password">
+          <span class="error" id="passName"></span>
+          <span class="passErr error-icon"></span>
+          <input type="Password" name="Password" id="password-name"/ placeholder="Password" onkeyup="validatePass()">
+        </label>
+        <button type="submit" onclick="validateBtn()">CLAIM YOUR FREE TRIAL</button>
+        <p>By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
+      </form>
+    </div>
+  </section>
+</div>
+  
+</body>
+</html>
